@@ -1,0 +1,2 @@
+all:
+	g++ -Isrc/include -Lsrc/lib -o main-sfml  main-sfml.cpp draw.cpp gameLoop.cpp init.cpp getScore.cpp globals.cpp swap.cpp mouseClick.cpp Menu.cpp movingAnimation.cpp matchFinding.cpp updateGrid.cpp secondSwapIfNoMatch.cpp -lsfml-graphics -lsfml-window -lsfml-system
