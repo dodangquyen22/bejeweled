@@ -12,7 +12,7 @@ void draw()
     lblScore.setCharacterSize(50);
     lblScore.setPosition({500, 0});
     lblScore.setFont(arial);
-    lblScore.setFillColor(sf::Color::Green);
+    lblScore.setFillColor(sf::Color::Magenta);
     lblScore.setString(ssScore.str());
 
     bejeweled.clear();
