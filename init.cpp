@@ -19,6 +19,8 @@ void init()
     click = 0;
     bool isSwap = false, isMoving = false;
     score = 0;
+    isScore = 0;
+    sec = 120;
     for (int i = 1; i <= 8; i++)
     {
         for (int j = 1; j <= 8; j++)

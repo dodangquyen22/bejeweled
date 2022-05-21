@@ -5,7 +5,7 @@ void secondSwapIfNoMatch()
     swap(p1, p2);
     if (isSwap && !isMoving)
     {
-        if (!score)
+        if (!isScore)
         {
             swap(grid[y0][x0], grid[y][x]);
         }

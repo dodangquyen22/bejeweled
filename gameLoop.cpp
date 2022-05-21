@@ -8,6 +8,7 @@ void secondSwapIfNoMatch();
 void matchFinding();
 void getScore();
 void updateGrid();
+// void Times();
 void gameLoop()
 {
     Menu menu(bejeweled.getSize().x, bejeweled.getSize().y);
@@ -63,7 +64,7 @@ void gameLoop()
         }
         if (count == 0)
         {
-
+            // Times();
             mouseClick();          // xử lí chuột
             matchFinding();        // Tìm kiếm các viên kim cương trùng giống nhau theo hàng và theo cột
             movingAnimation();     // chuyển đổi vị trí của 2 viên kim cương trên màn hình và lưu lại vị trí của chúng

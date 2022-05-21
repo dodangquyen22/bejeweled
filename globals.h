@@ -27,3 +27,5 @@ extern int click;
 extern Vector2i pos;
 extern bool isSwap, isMoving;
 extern int score;
+extern int isScore;
+extern int sec;

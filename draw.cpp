@@ -1,8 +1,16 @@
 #include "globals.h"
 #include <sstream>
 #include <iostream>
+#include <unistd.h>
 void draw()
 {
+    int sec = 120;
+    while (sec > 0)
+    {
+        system("cls");
+        sec--;
+        sleep(1);
+    }
     sf::Font arial;
     arial.loadFromFile("arial.ttf");
 
@@ -15,9 +23,19 @@ void draw()
     lblScore.setFillColor(sf::Color::Magenta);
     lblScore.setString(ssScore.str());
 
+    std::ostringstream ssSec;
+    ssSec << "Time : " << sec;
+    sf::Text Timess;
+    Timess.setCharacterSize(50);
+    Timess.setPosition({500, 50});
+    Timess.setFont(arial);
+    Timess.setFillColor(sf::Color::Magenta);
+    Timess.setString(ssSec.str());
+
     bejeweled.clear();
     bejeweled.draw(background);
     bejeweled.draw(lblScore);
+    bejeweled.draw(Timess);
     for (int i = 1; i <= 8; i++)
     {
         for (int j = 1; j <= 8; j++)

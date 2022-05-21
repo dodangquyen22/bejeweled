@@ -13,3 +13,5 @@ int click;
 Vector2i pos;
 bool isSwap, isMoving;
 int score;
+int isScore;
+int sec;
