@@ -34,7 +34,7 @@
 * GameLoop
 * GameOver
 ### Mô tả :
-* #### MenuState: Có 2 nút:
+* #### Menu: Có 2 nút:
     * Play  :    Chuyển sang trạng thái GameLoop
     * Exit   :   Thoát game  
 * #### GameLoop                 :  Xử lý trò chơi
