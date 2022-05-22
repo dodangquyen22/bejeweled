@@ -52,7 +52,7 @@ void gameLoop()
                     {
                         check = 0;
                     }
-                    if (menu.GetPressendItem() == 2)
+                    if (menu.GetPressendItem() == 1)
                     {
                         bejeweled.close();
                     }
