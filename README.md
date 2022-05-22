@@ -38,7 +38,7 @@
     * Play  :    Chuyển sang trạng thái GameLoop
     * Exit   :   Thoát game  
 * #### GameLoop                 :  Xử lý trò chơi
-* #### GameOver: Khi hết thời gian quy định của trò chơi thì game sẽ quay lại GameLoop  
+* #### GameOver : Khi hết thời gian quy định của trò chơi thì game sẽ quay lại GameLoop  
 ## **Kỹ thuật lập trình được sử dụng**
 * Lập trình đồ họa
 * Class
@@ -52,8 +52,8 @@
 * Kịch bản game còn khá đơn giản, đồ họa chưa đẹp
 * Hướng phát triển:
 	* Nâng cấp đồ họa game cho bắt mắt hơn
-        * Xây dựng chương trình game với nhiều level
-        * Thêm các item phụ, các kịch bản mới thú vị hơn
+   * Xây dựng chương trình game với nhiều level
+   * Thêm các item phụ, các kịch bản mới thú vị hơn
 
 
 
