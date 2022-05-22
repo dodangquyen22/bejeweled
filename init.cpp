@@ -5,13 +5,13 @@ void init()
 {
     ts = 54;
     offset = {48, 24};
-    bejeweled.create(VideoMode(740, 480), "Game Bejeweled");
+    bejeweled.create(VideoMode(740, 480), "Game Bejeweled", sf::Style::Default);
     srand(time(0));
     bejeweled.setFramerateLimit(60);
-    t1.loadFromFile("background.png");
-    t2.loadFromFile("gems.png");
+    t1.loadFromFile("image/background.png");
+    t2.loadFromFile("image/gems.png");
     // t4.loadFromFile("cursor.png");
-    t3.loadFromFile("start.png");
+    t3.loadFromFile("image/start.png");
     background.setTexture(t1);
     gems.setTexture(t2);
     // cursor.setTexture(t4);
@@ -21,6 +21,8 @@ void init()
     score = 0;
     isScore = 0;
     sec = 120;
+    musicc.openFromFile("audio/musicc.wav");
+    musicc.setVolume(50);
     for (int i = 1; i <= 8; i++)
     {
         for (int j = 1; j <= 8; j++)

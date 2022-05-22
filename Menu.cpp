@@ -2,7 +2,7 @@
 
 Menu::Menu(float width, float height)
 {
-    if (!font.loadFromFile("arial.ttf"))
+    if (!font.loadFromFile("font/arial.ttf"))
     {
     }
     menu[0].setFont(font);

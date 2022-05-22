@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 using namespace sf;
 
@@ -29,3 +30,5 @@ extern bool isSwap, isMoving;
 extern int score;
 extern int isScore;
 extern int sec;
+extern Time elapsed;
+extern Music musicc;

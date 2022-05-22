@@ -1,5 +1,5 @@
 #include "globals.h"
-
+//#include <SFML/Audio.hpp>
 int ts;
 Vector2i offset;
 RenderWindow bejeweled;
@@ -15,3 +15,5 @@ bool isSwap, isMoving;
 int score;
 int isScore;
 int sec;
+Time elapsed;
+Music musicc;

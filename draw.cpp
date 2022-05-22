@@ -4,15 +4,8 @@
 #include <unistd.h>
 void draw()
 {
-    int sec = 120;
-    while (sec > 0)
-    {
-        system("cls");
-        sec--;
-        sleep(1);
-    }
     sf::Font arial;
-    arial.loadFromFile("arial.ttf");
+    arial.loadFromFile("font/arial.ttf");
 
     std::ostringstream ssScore;
     ssScore << "Score : " << score;
@@ -20,16 +13,17 @@ void draw()
     lblScore.setCharacterSize(50);
     lblScore.setPosition({500, 0});
     lblScore.setFont(arial);
-    lblScore.setFillColor(sf::Color::Magenta);
+    lblScore.setFillColor(sf::Color::Blue);
     lblScore.setString(ssScore.str());
 
     std::ostringstream ssSec;
-    ssSec << "Time : " << sec;
+    ssSec << "Time  : " << (int)elapsed.asSeconds();
+
     sf::Text Timess;
     Timess.setCharacterSize(50);
     Timess.setPosition({500, 50});
     Timess.setFont(arial);
-    Timess.setFillColor(sf::Color::Magenta);
+    Timess.setFillColor(sf::Color::Blue);
     Timess.setString(ssSec.str());
 
     bejeweled.clear();

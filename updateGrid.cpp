@@ -1,8 +1,10 @@
 #include "globals.h"
+#include <SFML/Audio.hpp>
 void swap(piece p1, piece p2);
 void updateGrid()
 {
-    bool isPlus=false;
+
+    bool isPlus = false;
     if (!isMoving)
     {
         for (int i = 8; i > 0; i--)
@@ -22,10 +24,11 @@ void updateGrid()
                     grid[i][j].kind = rand() % 7;
                     grid[i][j].y = -ts * n++;
                     grid[i][j].match = 0;
-                    isPlus=true;
-             }
+                    isPlus = true;
+                    musicc.play();
+                }
     }
-   if(isPlus==true)
+    if (isPlus == true)
     {
         score++;
     }

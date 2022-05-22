@@ -1,6 +1,6 @@
 #include "globals.h"
 #include "Menu.h"
-#include <unistd.h>
+#include <SFML/Audio.hpp>
 void draw();
 void mouseClick();
 void movingAnimation();
@@ -8,11 +8,15 @@ void secondSwapIfNoMatch();
 void matchFinding();
 void getScore();
 void updateGrid();
-// void Times();
 void gameLoop()
 {
+    sf::Clock clock;
     Menu menu(bejeweled.getSize().x, bejeweled.getSize().y);
-    int count;
+    sf::Music music;
+    music.openFromFile("audio/music.wav");
+    music.setVolume(50);
+    music.play();
+    bool check = true;
     while (bejeweled.isOpen())
     {
         Event event1;
@@ -46,7 +50,7 @@ void gameLoop()
 
                     if (menu.GetPressendItem() == 0)
                     {
-                        count = 0;
+                        check = 0;
                     }
                     if (menu.GetPressendItem() == 1)
                     {
@@ -55,48 +59,29 @@ void gameLoop()
                 }
             }
         }
-        if (count != 0)
+        if (check != 0)
         {
             bejeweled.clear();
             bejeweled.draw(start);
             menu.draw(bejeweled);
             bejeweled.display();
         }
-        if (count == 0)
+        if (check == 0)
         {
-            // Times();
             mouseClick();          // xử lí chuột
             matchFinding();        // Tìm kiếm các viên kim cương trùng giống nhau theo hàng và theo cột
             movingAnimation();     // chuyển đổi vị trí của 2 viên kim cương trên màn hình và lưu lại vị trí của chúng
             getScore();            // Tính điểm
             secondSwapIfNoMatch(); // giao hoán hai viên kim cương và trả về vị trí ban đầu nếu không tạo thành các hàng và cột các viên kim cương giống nhau
-            updateGrid();
-            draw(); // vẽ
+            updateGrid();          // Cập nhận lại gems
+            draw();                // vẽ
+            if ((int)elapsed.asSeconds() == 12)
+            {
+                check = true;
+                clock.restart();
+                score = 0;
+            }
         }
+        elapsed = clock.getElapsedTime();
     }
-    // int sec = 120;
-    // while (sec > 0)
-    // {
-    //     system("cls");
-    //     sec--;
-    //     sleep(1);
-    //     while (bejeweled.isOpen())
-    //     {
-    //         Event event2;
-    //         while (bejeweled.pollEvent(event2))
-    //         {
-    //             if (event2.type == Event::Closed)
-    //             {
-    //                 bejeweled.close();
-    //             }
-    //         }
-    //     }
-    //     if (sec == 0)
-    //     {
-    //         while (bejeweled.isOpen())
-    //         {
-    //             bejeweled.close();
-    //         }
-    //     }
-    // }
 }
