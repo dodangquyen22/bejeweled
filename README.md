@@ -49,7 +49,7 @@
 ## **Kết luận**
 * Game cơ bản đã có đủ các cấu trúc của 1 game. 
 * Tuy nhiên, do không sử dụng con trỏ, cấu trúc game chưa được tốt và tối ưu hóa nhất.
-* Kịch bản game còn khá đơn giản, đồ họa chưa đẹp;
+* Kịch bản game còn khá đơn giản, đồ họa chưa đẹp
 * Hướng phát triển:
 	* Nâng cấp đồ họa game cho bắt mắt hơn
         * Xây dựng chương trình game với nhiều level
