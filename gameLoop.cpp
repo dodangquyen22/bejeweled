@@ -75,7 +75,7 @@ void gameLoop()
             secondSwapIfNoMatch(); // giao hoán hai viên kim cương và trả về vị trí ban đầu nếu không tạo thành các hàng và cột các viên kim cương giống nhau
             updateGrid();          // Cập nhận lại gems
             draw();                // vẽ
-            if ((int)elapsed.asSeconds() == 120)
+            if ((int)elapsed.asSeconds() == 60)
             {
                 check = true;
                 clock.restart();
