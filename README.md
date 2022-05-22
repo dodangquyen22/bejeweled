@@ -24,8 +24,8 @@
 ```
 ---
 ## **Mô tả chung:**
-* Game sử dụng phím điều hướng và chuột để điều khiển;
-* Thành phần game: gems;
+* Game sử dụng phím điều hướng và chuột để điều khiển
+* Thành phần game: gems
 * Ý tưởng chính:Xếp các viên kim cương có hình dạng giống nhau (tối thiểu là ba viên)thành hàng thẳng theo hàng ngang hoặc hàng dọc bằng cách nhấn chuột trái vào hai viên kim cương. Mỗi ván game sẽ chơi trong vòng 1 phút, mỗi lần phá hủy được các viên kim cương sẽ tính là một điểm.
 ## **Các chức năng đã cài đặt**
 ### Cấu trúc game: Game có đủ các trạng thái cơ bản:
