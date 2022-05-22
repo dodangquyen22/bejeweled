@@ -1,6 +1,6 @@
 # **Bejeweled** 
 ## **Video mô tả game**
-[Link](https://youtu.be/eIV05z9agxQ)
+[Link](https://youtu.be/gZhSbtTeR-s)
 
 ## **Hướng dẫn xây dựng**
 ---
