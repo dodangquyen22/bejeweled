@@ -14,7 +14,7 @@ void gameLoop()
     Menu menu(bejeweled.getSize().x, bejeweled.getSize().y);
     sf::Music music;
     music.openFromFile("audio/music.wav");
-    music.setVolume(50);
+    music.setVolume(70);
     music.play();
     bool check = true;
     while (bejeweled.isOpen())
@@ -52,7 +52,7 @@ void gameLoop()
                     {
                         check = 0;
                     }
-                    if (menu.GetPressendItem() == 1)
+                    if (menu.GetPressendItem() == 2)
                     {
                         bejeweled.close();
                     }
@@ -75,7 +75,7 @@ void gameLoop()
             secondSwapIfNoMatch(); // giao hoán hai viên kim cương và trả về vị trí ban đầu nếu không tạo thành các hàng và cột các viên kim cương giống nhau
             updateGrid();          // Cập nhận lại gems
             draw();                // vẽ
-            if ((int)elapsed.asSeconds() == 12)
+            if ((int)elapsed.asSeconds() == 120)
             {
                 check = true;
                 clock.restart();

@@ -2,7 +2,7 @@
 
 Menu::Menu(float width, float height)
 {
-    if (!font.loadFromFile("font/arial.ttf"))
+    if (!font.loadFromFile("font/SportypoReguler-OVGwe.ttf"))
     {
     }
     menu[0].setFont(font);
@@ -10,14 +10,14 @@ Menu::Menu(float width, float height)
     menu[0].setFillColor(sf::Color::Red);
     menu[0].setString("Play");
     menu[0].setOrigin(menu[0].getLocalBounds().width / 2, menu[0].getLocalBounds().height / 2);
-    menu[0].setPosition(Vector2f(width / 2, height / (MAX_NUMBER_OF_ITEMS + 1) * 1));
+    menu[0].setPosition(Vector2f(width / 2, height / (MAX_NUMBER_OF_ITEMS + 1) * 1.5));
 
     menu[1].setFont(font);
     menu[1].setCharacterSize(72);
     menu[1].setFillColor(sf::Color::White);
     menu[1].setString("Exit");
     menu[1].setOrigin(menu[1].getLocalBounds().width / 2, menu[1].getLocalBounds().height / 2);
-    menu[1].setPosition(Vector2f(width / 2, height / (MAX_NUMBER_OF_ITEMS + 1) * 2));
+    menu[1].setPosition(Vector2f(width / 2, height / (MAX_NUMBER_OF_ITEMS + 1) * 2.5));
 }
 Menu::~Menu()
 {

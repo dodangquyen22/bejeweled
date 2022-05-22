@@ -5,10 +5,10 @@
 void draw()
 {
     sf::Font arial;
-    arial.loadFromFile("font/arial.ttf");
+    arial.loadFromFile("font/vectroid.ttf");
 
     std::ostringstream ssScore;
-    ssScore << "Score : " << score;
+    ssScore << "Score: " << score;
     sf::Text lblScore;
     lblScore.setCharacterSize(50);
     lblScore.setPosition({500, 0});
@@ -17,7 +17,7 @@ void draw()
     lblScore.setString(ssScore.str());
 
     std::ostringstream ssSec;
-    ssSec << "Time  : " << (int)elapsed.asSeconds();
+    ssSec << "Time : " << (int)elapsed.asSeconds();
 
     sf::Text Timess;
     Timess.setCharacterSize(50);
