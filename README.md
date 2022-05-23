@@ -1,4 +1,7 @@
 # **Bejeweled** 
+
+## **Họ và Tên : Đỗ Đăng Quyền. MSV: 21020387**
+
 ## **Video mô tả game**
 [Link](https://youtu.be/gZhSbtTeR-s)
 
